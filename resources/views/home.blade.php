@@ -27,8 +27,8 @@
                 <tr>
                     <th scope="col">Company</th>
                     <th scope="col">Departure Station</th>
-                    <th scope="col">Arrival Station</th>
                     <th scope="col">Departure Time</th>
+                    <th scope="col">Arrival Station</th>
                     <th scope="col">Arrival Time</th>
                     <th scope="col">Train Code</th>
                     <th scope="col">No. Carriages</th>
@@ -47,10 +47,10 @@
                             {{ $train->departure_station }}
                         </td>
                         <td>
-                            {{ $train->arrival_station }}
+                            {{ $train->departure_time }}
                         </td>
                         <td>
-                            {{ $train->departure_time }}
+                            {{ $train->arrival_station }}
                         </td>
                         <td>
                             {{ $train->arrival_time }}

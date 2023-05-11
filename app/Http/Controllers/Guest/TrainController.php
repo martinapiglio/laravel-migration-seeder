@@ -15,9 +15,13 @@ class TrainController extends Controller
         $currentDate = new DateTime();
         $currentDateFormatted = $currentDate->format('Y-m-d H:i:s');
 
-        $trains = Train::query()->where('departure_time', '>=', $currentDateFormatted)->get();
+        $trains = Train::query()    
+                                ->where('departure_time', '>=', $currentDateFormatted)
+                                ->orderBy('departure_time')
+                                ->get();
 
         $curDt = $currentDate->format('d/m/Y');
+
         return view('home', compact('trains', 'curDt'));
     }
 }
