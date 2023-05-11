@@ -17,6 +17,7 @@ class TrainController extends Controller
 
         $trains = Train::query()    
                                 ->where('departure_time', '>=', $currentDateFormatted)
+                                //->where('departure_time', '>=', date(now()))  --- works as well
                                 ->orderBy('departure_time')
                                 ->get();
 
