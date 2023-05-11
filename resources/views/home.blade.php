@@ -17,7 +17,63 @@
 
 <body>
 
-    ciao
+    <div class="container py-4">
+
+        <h1 class="pb-3">Trains -  {{ $curDt }} </h1>
+
+        <table class="table">
+
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Company</th>
+                    <th scope="col">Departure Station</th>
+                    <th scope="col">Arrival Station</th>
+                    <th scope="col">Departure Time</th>
+                    <th scope="col">Arrival Time</th>
+                    <th scope="col">Train Code</th>
+                    <th scope="col">No. Carriages</th>
+                    <th scope="col">Train on schedule</th>
+                    <th scope="col">Train Cancelled</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach ($trains as $train)
+                    <tr>
+                        <td>
+                            {{ $train->company }}
+                        </td>
+                        <td>
+                            {{ $train->departure_station }}
+                        </td>
+                        <td>
+                            {{ $train->arrival_station }}
+                        </td>
+                        <td>
+                            {{ $train->departure_time }}
+                        </td>
+                        <td>
+                            {{ $train->arrival_time }}
+                        </td>
+                        <td>
+                            {{ $train->train_code }}
+                        </td>
+                        <td>
+                            {{ $train->no_train_carriages }}
+                        </td>
+                        <td>
+                            {{ $train->on_schedule == 1 ? 'Yes' : 'No' }}
+                        </td>
+                        <td>{{ $train->cancelled == 1 ? 'Yes' : 'No' }}
+                        </td>
+                    </tr>
+                @endforeach
+
+            </tbody>
+
+        </table>
+
+    </div>
 
 </body>
 
