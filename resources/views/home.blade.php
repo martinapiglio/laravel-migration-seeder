@@ -62,9 +62,9 @@
                             {{ $train->no_train_carriages }}
                         </td>
                         <td>
-                            {{ $train->on_schedule == 1 ? 'Yes' : 'No' }}
+                            {{ $train->is_on_schedule == 1 ? 'Yes' : 'No' }}
                         </td>
-                        <td>{{ $train->cancelled == 1 ? 'Yes' : 'No' }}
+                        <td>{{ $train->is_cancelled == 1 ? 'Yes' : 'No' }}
                         </td>
                     </tr>
                 @endforeach
