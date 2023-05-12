@@ -17,7 +17,7 @@ class TrainsSeeder extends Seeder
 
             $train = new Train();
 
-            $train->company = $faker->name();
+            $train->company = $faker->company();
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
             $train->departure_time = $faker->dateTimeBetween('-1 week', '+2 week');
