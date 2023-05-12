@@ -1,0 +1,6 @@
+company,departure_station,arrival_station,departure_time,arrival_time,train_code,no_train_carriages,is_on_schedule,is_cancelled
+Trenitalia,Settimo Manfredi,Sesto Davis lido, 2023-05-17 10:29:00,2023-05-06 10:11:00,57445,10,0,1
+Trenord,Santo lido,Ingrid del friuli,2023-05-13 12:00:00,2023-05-09 08:56:00,93471,3,0,1
+Trenitalia,Settimo Naomi terme,San Joey nell'emilia,2023-05-06 06:42:00,2023-05-09 20:51:00,97212,48,1,1
+Italo,Sesto Osea,Elda terme,2023-05-20 21:55:00,2023-05-11 12:56:00,53317,65,1,1
+Trenitalia,Quarto Monia sardo,Quarto Maria,2023-05-21 11:52:00,2023-05-16 00:17:00,24829,2,0,1
